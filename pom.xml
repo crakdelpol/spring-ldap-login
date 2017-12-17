@@ -7,7 +7,11 @@
     <groupId>Login</groupId>
     <artifactId>Login</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>Activedirectory</module>
+        <module>ldap</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -143,4 +147,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
