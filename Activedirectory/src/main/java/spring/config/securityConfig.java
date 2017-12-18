@@ -45,19 +45,14 @@ public class securityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
-    /**
-     * create bean for activeDirectory login
-     * @return
-     */
     @Bean
-    public AuthenticationProvider activeDirectoryLdapAuthenticationProvider() {
+    public ActiveDirectoryLdapAuthenticationProvider activeDirectoryLdapAuthenticationProvider() {
 
-        ActiveDirectoryLdapAuthenticationProvider provider = new ActiveDirectoryLdapAuthenticationProvider(env.getProperty("domain"), env.getProperty("url"));
-
+        ActiveDirectoryLdapAuthenticationProvider provider = new ActiveDirectoryLdapAuthenticationProvider(env.getProperty("ldapDomanin"), env.getProperty("url"));
         provider.setConvertSubErrorCodesToExceptions(true);
         provider.setUseAuthenticationRequestCredentials(true);
-
         return provider;
     }
+
 
 }
