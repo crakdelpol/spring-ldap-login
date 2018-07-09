@@ -23,7 +23,7 @@
     <properties>
 
         <spring.version>4.3.10.RELEASE</spring.version>
-        <security.version>4.2.3.RELEASE</security.version>
+        <security.version>5.0.6.RELEASE</security.version>
         <spring.ldap>2.3.2.RELEASE</spring.ldap>
         <javax.servlet.version>3.0.1</javax.servlet.version>
         <jsp-api.version>2.2</jsp-api.version>
