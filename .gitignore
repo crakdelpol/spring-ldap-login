@@ -1,4 +1,11 @@
-# Created by .ignore support plugin (hsz.mobi)
-out/
-target/
-.idea/
+/nbproject/
+/.idea/*
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+node_modules/
+bin/
+obj/
+.vs/
